@@ -1,119 +1,57 @@
 import React, { useState, useEffect } from "react";
 import "./About.css";
-import Address from "./components/Address.jsx";
 
+// Import images for the carousel
+import Image1 from './img/1.jpg';
 import Image2 from './img/2.jpg';
 import Image3 from './img/3.jpg';
 import Image4 from './img/4.jpg';
-import Image5 from './img/5.jpg';
+
 const About = () => {
-  const [activeSection, setActiveSection] = useState("history");
+  const images = [Image1, Image2, Image3, Image4];
   const [imageIndex, setImageIndex] = useState(0);
-  //const [images, setImages] = useState(
-  const images=[
-   Image2,Image3,Image4,Image5,
-  ];
-
-  const sections = {
-    history: {
-      title: "About DR.Jiddu Sai Akhila",
-      text: `Dr. Jiddu Sai Akhila is a passionate practitioner of alternative medicine- Homoeopathy who pursued her B.H.M.S (Bachelor of Homoeopathic Medicine and Surgery) from Father Muller Homoeopathic Medical College in Karnataka, India. She is a college topper who secured first rank in the first three years and second rank in the final year with distinctions twice in medical school. A believer in active participation she has taken part in various academic, research, and co-curricular activities in college and within homeopathic fraternity. She is the Presidential Gold Medal Awardee batch 2017-23 and receiver of the Gold scholarship under The Mukesh Batra Academic Excellence Awards. She is an alumnus of The PSBB Millennium School, OMR, Chennai, India. She has been an All- rounder and Academic achiever in school. She has successfully completed two research papers with positive results on rimary insomnia and constitutional survey study which have been published in acclaimed Homoeopathic journals. She has attended and participated in various online and offline conferences and C Es across the country.`,
-    },
-    effectiveness: {
-      title: "Effectiveness of Homeopathy",
-      text: null, // No text for this section
-    },
- accomplishments: {
-  Main: (props) => (
-    <>
-      <Address />
-    </>
-  ),
-},
-
-  };
-  let imageScrollTimer = null;
-  const setImageScrollTimer = (timer) => {
-    imageScrollTimer = timer;
-  };
-  const startImageScrolling = () => {
-    const timer = setInterval(() => {
-      setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change images every 5 seconds
-
-    // Save the timer ID to be able to clear it later
-    setImageScrollTimer(timer);
-  };
-  const handleSectionClick = (section) => {
-    setActiveSection(section);
-    if (section === "effectiveness") {
-      // Start the image scrolling timer
-      startImageScrolling();
-    } else {
-      // Stop the image scrolling timer when switching to other sections
-      stopImageScrolling();
-    }
-  };
-
-
-
-  const stopImageScrolling = () => {
-    if (imageScrollTimer) {
-      clearInterval(imageScrollTimer);
-    }
-  };
 
   useEffect(() => {
-    // Clean up the timer when the component unmounts
-    return () => {
-      stopImageScrolling();
-    };
+    const timer = setInterval(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(timer);
   }, []);
-
-  const renderSections = () => {
-    return Object.keys(sections).map((section) => {
-      const isActive = section === activeSection;
-      return (
-        <button
-          key={section}
-          className={`section-button ${isActive && "active"}`}
-          onClick={() => handleSectionClick(section)}
-        >
-          {sections[section].title}
-        </button>
-      );
-    });
-  };
-
-  const renderActiveSection = () => {
-    if (activeSection === "effectiveness") {
-      // Render images for the "Effectiveness of Homeopathy" section
-      const currentImage = images[imageIndex];
-      const imageStyle = {
-        maxWidth: "100%", // Set the maximum width to fit the container
-        maxHeight: "100%", // Set the maximum height to fit the container
-      };
-
-      return (
-        <div className="image-slider">
-          <img src={currentImage} alt={`Image ${imageIndex + 1}`} style={imageStyle} />
-        </div>
-      );
-    } else {
-      // Render text for other sections
-      return (
-        <div className="section-content">
-          <h3>{sections[activeSection].title}</h3>
-          <p>{sections[activeSection].text}</p>
-        </div>
-      );
-    }
-  };
 
   return (
     <div className="about-container">
-      <div className="section-buttons">{renderSections()}</div>
-      <div className="section-content-container">{renderActiveSection()}</div>
+      {/* Carousel Section */}
+      <div className="carousel">
+        <img src={images[imageIndex]} alt="Doctor" className="carousel-image" />
+      </div>
+
+      {/* About Section */}
+      <div className="about-section">
+        <h2>About Dr. Jiddu Sai Akhila</h2>
+        <p>
+          Dr. Jiddu Sai Akhila is a passionate practitioner of alternative medicine – Homeopathy, 
+          who pursued her B.H.M.S (Bachelor of Homeopathic Medicine and Surgery) from Father Muller 
+          Homeopathic Medical College in Karnataka, India. She is a college topper who secured first 
+          rank in the first three years and second rank in the final year with distinctions. 
+          A believer in active participation, she has taken part in various academic, research, 
+          and co-curricular activities in college and within the homeopathic fraternity. She is the 
+          Presidential Gold Medal Awardee (2017-23) and recipient of the Gold Scholarship under 
+          The Mukesh Batra Academic Excellence Awards.
+        </p>
+      </div>
+
+      {/* Myths Busted Section */}
+      <div className="myths-section">
+        <h2>Myths About Homeopathy – Busted!</h2>
+        <ul>
+          <li><strong>Myth 1:</strong> Homeopathy is just placebo.<br />
+            <em>Fact:</em> Homeopathy has shown positive results in various clinical studies and is used globally by millions.</li>
+          <li><strong>Myth 2:</strong> Homeopathy takes too long to work.<br />
+            <em>Fact:</em> Homeopathy can provide rapid relief, especially in acute conditions when the right remedy is used.</li>
+          <li><strong>Myth 3:</strong> Homeopathy cannot be used alongside conventional medicine.<br />
+            <em>Fact:</em> Homeopathy can complement conventional treatments, improving overall well-being.</li>
+        </ul>
+      </div>
     </div>
   );
 };
