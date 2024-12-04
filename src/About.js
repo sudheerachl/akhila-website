@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 
 // Import images for the carousel
-import Image1 from './img/1.jpg';
+import Image1 from './img/1.jpeg';
 import Image2 from './img/2.jpg';
 import Image3 from './img/3.jpg';
 import Image4 from './img/4.jpg';
