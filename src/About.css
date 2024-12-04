@@ -59,4 +59,109 @@ p {
 .image-slider {
   position: relative;
   overflow: hidden;
-  mar
+  margin-bottom: 30px;
+}
+
+.image-slider img {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.image-slider .next, .image-slider .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 10px 15px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 22px;
+  border-radius: 0 10px 10px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-slider .next:hover, .image-slider .prev:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-slider .next {
+  right: 10px;
+}
+
+.image-slider .prev {
+  left: 10px;
+}
+
+/* Dots for Slider */
+.image-slider .dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.image-slider .dot {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-slider .dot.active {
+  background-color: #fff;
+}
+
+/* Carousel Section */
+.carousel {
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Myths Section */
+.myths-section {
+  background-color: #eaf6f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.myths-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.myths-section li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.myths-section strong {
+  color: #333;
+}
