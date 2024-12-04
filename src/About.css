@@ -12,16 +12,20 @@
   margin-bottom: 30px;
 }
 
-.carousel-image {
-  width: 100%; /* Maintain full width */
-  max-width: 800px; /* Set a max width */
-  max-height: 400px; /* Restrict max height */
-  object-fit: cover; /* Ensure image covers container */
+.carousel-image, 
+.image-slider img {
+  width: 100%; /* Full width of container */
+  max-width: 800px; /* Optional max width */
+  height: auto; /* Adjust height automatically */
+  object-fit: contain; /* No cropping or zooming */
+  object-position: center; /* Center the image */
   display: block;
   margin: auto;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
+  background-color: #f0f0f0; /* Fallback background */
 }
+
 
 /* About Section */
 .about-section {
