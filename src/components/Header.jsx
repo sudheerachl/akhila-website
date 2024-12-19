@@ -1,34 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../img/dang.png"
 
 function Header(props) {
   const loadcontent = props.load;
-  
+
   return (
-    <div className="flex justify-between p-10">
-      {/* Logo */}
-      <div>
-        <h2>
+    <div className="flex flex-col sm:flex-row justify-between items-center p-5 sm:p-10 bg-white shadow-md">
+      {/* Logo Section */}
+      <div className="mb-4 sm:mb-0 text-center sm:text-left">
+        <h2 className="text-lg sm:text-2xl font-bold text-blue-800">
           SAI SAHITHRA HOMOEO CLINIC
         </h2>
       </div>
-      {/* Right  */}
-      <div className="flex gap-10">
-        <p id="home" className="active">
-      <Link to="/" onClick={loadcontent} >Home</Link>  
+
+      {/* Navigation Links */}
+      <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-10">
+        <p id="home" className="text-sm sm:text-base">
+          <Link
+            to="/"
+            onClick={loadcontent}
+            className="hover:text-blue-600 transition-colors duration-300"
+          >
+            Home
+          </Link>
         </p>
-        <p id="about" >
-          <Link to="/about" onClick={loadcontent}>About Us</Link>
+        <p id="about" className="text-sm sm:text-base">
+          <Link
+            to="/about"
+            onClick={loadcontent}
+            className="hover:text-blue-600 transition-colors duration-300"
+          >
+            About Us
+          </Link>
         </p>
-        <p id="contact" >
-       <Link to="/contact" onClick={loadcontent}>Contact Us</Link> </p>
-        /*<div className="bg-[#0e21fe] book justify-center shadow-lg shadow-blue-700/60 px-5 rounded-full text-white py-2">*/
-          /*<p id="book"><Link onClick={loadcontent} to="/book">Book Now</Link> </p>*/
-        /*</div>*/
+        <p id="contact" className="text-sm sm:text-base">
+          <Link
+            to="/contact"
+            onClick={loadcontent}
+            className="hover:text-blue-600 transition-colors duration-300"
+          >
+            Contact Us
+          </Link>
+        </p>
       </div>
     </div>
   );
-};
+}
 
 export default Header;
