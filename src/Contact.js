@@ -49,7 +49,6 @@ const Contact = () => {
   return (
     <div className="contact-container">
       {renderSections()}
-      {renderDoctorImage()}
     </div>
   );
 };
