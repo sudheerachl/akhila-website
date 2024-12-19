@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Faculty = () => {
   const [randomText, setRandomText] = useState("");
@@ -17,16 +15,18 @@ const Faculty = () => {
   }, []);
 
   return (
-    <div className="h-full flex flex-col justify-center items-center">
-      <div className="bg-image" style={{
-        backgroundImage: `url(${homoeopathyPictures[Math.floor(Math.random() * homoeopathyPictures.length)]})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "100%"
-      }}>
-        <div className="bg-white opacity-75 p-5 rounded-md">
-          <h1 className="text-3xl font-bold">About us</h1>
-          <p className="text-lg">{randomText}</p>
+    <div className="h-screen flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
+      <div
+        className="bg-image w-full h-full"
+        style={{
+          backgroundImage: `url(${homoeopathyPictures[Math.floor(Math.random() * homoeopathyPictures.length)]})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="bg-white opacity-75 p-4 sm:p-6 md:p-8 rounded-md max-w-xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl font-bold">About us</h1>
+          <p className="text-base sm:text-lg">{randomText}</p>
         </div>
       </div>
     </div>
