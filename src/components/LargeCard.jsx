@@ -1,77 +1,79 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { FcVoicePresentation, FcInspection,FcApproval,FcDataProtection } from "react-icons/fc";
+import { FcVoicePresentation, FcInspection, FcApproval, FcDataProtection } from "react-icons/fc";
 import "./largecard.css";
+
 const LargeCard = (props) => {
   const loadcontent = props.load;
   return (
-    <div className="px-5 py-5">
-      <h1 className="text-[#0e21fe] px-5 ">SAI SAHITHRA HOMOEO CLINIC</h1>
-      <div className="flex head-1 justify-between py-5" >
-        <div className="text-6xl font-semibold ">
-        <p className="text-black font-normal" >Heal. Thrive. Flourish.</p>
-         
-        <div className="text-black font-normal">
-  <p className="text-black font-normal" >We are not just a clinic; we are your wellness partner.</p>
-  <p className="text-black font-normal">
-    Homeopathy: an ancient yet reliable method towards optimal health and
-    wellness. This is the path towards your thriving health. 
-  </p> 
-  <p className="text-black font-normal" >We strive to help you to lead healthy lives and promote your positive health
-    and well-being even beyond the simple absence of disease. </p>
-  <p className="text-black font-normal" >An experienced team strives to provide you with natural vitality that
-    will last for long time. </p>
-  <p className="text-black font-normal" >Start your journey towards a better life with homeopathy in order to discover its power.
-  </p>
-  
-  
-</div>
+    <div className="px-4 py-5">
+      <h1 className="text-[#0e21fe] text-2xl sm:text-3xl px-4">SAI SAHITHRA HOMOEO CLINIC</h1>
+      <div className="flex flex-col lg:flex-row justify-between py-5">
+        <div className="text-2xl sm:text-3xl font-semibold mb-4 lg:mb-0">
+          <p className="text-black font-normal">Heal. Thrive. Flourish.</p>
+
+          <div className="text-black font-normal mt-4">
+            <p>We are not just a clinic; we are your wellness partner.</p>
+            <p>
+              Homeopathy: an ancient yet reliable method towards optimal health and wellness. This is the path towards your thriving health.
+            </p>
+            <p>
+              We strive to help you lead healthy lives and promote your positive health and well-being even beyond the simple absence of disease.
+            </p>
+            <p>
+              An experienced team strives to provide you with natural vitality that will last for a long time.
+            </p>
+            <p>Start your journey towards a better life with homeopathy to discover its power.</p>
+          </div>
 
           <div className="bg-[#0e21fe] w-fit px-5 py-3 shadow-lg shadow-blue-700/60 text-base text-white font-normal rounded-full mt-5">
             <p className="flex items-center justify-center gap-3">
               Get in Touch
               <span className="bg-white/20 p-1 rounded-full">
-              <Link onClick={loadcontent} to="/contact">
-                <AiOutlineArrowRight />
-              </Link>
+                <Link onClick={loadcontent} to="/contact">
+                  <AiOutlineArrowRight />
+                </Link>
               </span>
             </p>
           </div>
         </div>
-        <div className="relative ">
-          <div className=" bg-gradient-to-tr py-5 rounded-r-lg  from-blue-700 to-blue-300 rounded-tl-full ">
+        <div className="relative mt-4 lg:mt-0">
+          <div className="bg-gradient-to-tr py-5 rounded-r-lg from-blue-700 to-blue-300 rounded-tl-full">
             <img
-              className="w-80 scale-100 object-contain banner" alt="Hospital"
+              className="w-80 sm:w-96 lg:w-80 scale-100 object-contain banner"
+              alt="Hospital"
               src="https://img.freepik.com/free-vector/health-professional-team_52683-36023.jpg?w=2000"
             />
           </div>
         </div>
       </div>
+
       <div className="bg-gradient-to-r mt-14 to-blue-300 rounded-t-3xl from-blue-700 via-[#3453ff] flex p-6 justify-between flex-wrap flex-row">
-        <div className="flex justify-center p-3 items-center">
+        <div className="flex justify-center p-3 items-center w-full sm:w-1/2 lg:w-1/4">
           <FcVoicePresentation className="h-20 w-20 bg-white rounded-2xl mr-2 brightness-110" />
           <div className="flex flex-col">
             <p className="text-white font-semibold">24/7</p>
-            <p className="text-sm text-white/70">Online Support available </p>
+            <p className="text-sm text-white/70">Online Support available</p>
             <p className="text-sm text-white/70">at almost any time</p>
           </div>
         </div>
 
-        <div className="p-3 flex justify-center items-center">
+        <div className="p-3 flex justify-center items-center w-full sm:w-1/2 lg:w-1/4">
           <FcInspection className="h-20 w-20 bg-white rounded-2xl mr-2 brightness-110" />
           <div className="flex flex-col">
             <p className="text-white font-semibold">Online Booking</p>
-            <p className="text-sm text-white/70">Book your appointment from </p>
+            <p className="text-sm text-white/70">Book your appointment from</p>
             <p className="text-sm text-white/70">anywhere with just one click</p>
           </div>
         </div>
-                <div className="p-3 flex justify-center items-center">
+
+        <div className="p-3 flex justify-center items-center w-full sm:w-1/2 lg:w-1/4">
           <FcDataProtection className="h-20 w-20 bg-white rounded-2xl mr-2 brightness-110" />
           <div className="flex flex-col">
             <p className="text-white font-semibold">Trusted and Secure</p>
             <p className="text-sm text-white/70">Our team makes sure a Highly</p>
-            <p className="text-sm text-white/70"> Tested and Secured Environment</p>
+            <p className="text-sm text-white/70">Tested and Secured Environment</p>
           </div>
         </div>
       </div>
