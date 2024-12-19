@@ -1,8 +1,10 @@
 /* Fixed dimensions for the box */
 .carousel,
 .image-container {
-  width: 500px; /* Fixed width */
-  height: 400px; /* Fixed height */
+  width: 100%; /* Make the width responsive */
+  max-width: 500px; /* Maximum width for larger screens */
+  height: auto; /* Allow height to adjust dynamically */
+  aspect-ratio: 5 / 4; /* Maintain aspect ratio */
   overflow: hidden; /* Hide overflow */
   display: flex;
   justify-content: center;
@@ -16,19 +18,19 @@
 /* Scale the image to fit inside the box while maintaining aspect ratio */
 .carousel-image, 
 .image-slider img {
-  max-width: 100%; /* Ensure the image width doesn't exceed the box */
-  max-height: 100%; /* Ensure the image height doesn't exceed the box */
+  width: 100%; /* Ensure the image fills the box width */
+  height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Scale image to fit inside box without cropping */
   object-position: center; /* Center the image */
 }
 
-
 @media (max-width: 768px) {
-  .carousel-image, 
-  .image-slider img {
+  .carousel {
     max-width: 300px; /* Smaller width on mobile */
   }
 }
+
+/* About Section */
 .about-container {
   background-color: #fff;
   background-image: linear-gradient(to bottom right, #fff, #f5f5f5);
@@ -37,9 +39,6 @@
   color: #333;
 }
 
-
-
-/* About Section */
 .about-section {
   background-color: #ffffff;
   padding: 20px;
@@ -49,7 +48,7 @@
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px; /* Adjusted for responsiveness */
   font-weight: bold;
   color: #007b5e;
   margin-bottom: 15px;
@@ -58,6 +57,15 @@ h2 {
 p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 20px; /* Smaller font size on mobile */
+  }
+  p {
+    font-size: 14px; /* Adjusted font size */
+  }
 }
 
 /* Myths Section */
@@ -81,6 +89,12 @@ p {
 
 .myths-section strong {
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .myths-section li {
+    font-size: 14px;
+  }
 }
 
 /* Image Slider */
@@ -150,4 +164,3 @@ p {
 .image-slider .dot.active {
   background-color: #fff;
 }
-
