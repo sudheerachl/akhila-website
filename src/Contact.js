@@ -47,19 +47,15 @@ const Contact = () => {
   const renderDoctorImage = () => {
     return (
       <div className="doctor-image-container">
-        <img
-          src={doctorImage}
-          alt="Dr. Akhila"
-          className="doctor-image"
-        />
+        <img src={doctorImage} alt="Dr. Akhila" className="doctor-image" />
       </div>
     );
   };
 
   return (
     <div className="contact-container">
-      {renderSections()}
       {renderDoctorImage()}
+      {renderSections()}
     </div>
   );
 };
