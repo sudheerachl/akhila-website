@@ -38,15 +38,7 @@ const LargeCard = (props) => {
             </p>
           </div>
         </div>
-        <div className="relative mt-4 lg:mt-0">
-          <div className="bg-gradient-to-tr py-5 rounded-r-lg from-blue-700 to-blue-300 rounded-tl-full">
-            <img
-              className="w-80 sm:w-96 lg:w-80 scale-100 object-contain banner"
-              alt="Hospital"
-              src="https://img.freepik.com/free-vector/health-professional-team_52683-36023.jpg?w=2000"
-            />
-          </div>
-        </div>
+       
       </div>
 
       <div className="bg-gradient-to-r mt-14 to-blue-300 rounded-t-3xl from-blue-700 via-[#3453ff] flex p-6 justify-between flex-wrap flex-row">
