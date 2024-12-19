@@ -2,13 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 
 // Import images for the carousel
-import Image1 from './img/1.jpeg';
-import Image2 from './img/2.jpg';
-import Image3 from './img/3.jpg';
-import Image4 from './img/4.jpg';
+import Image1 from './img/akhila1.jpg';
+import Image2 from './img/akhila2.jpg';
+import Image3 from './img/akhila3.jpg';
+import Image4 from './img/akhila4.jpg';
+import Image5 from './img/akhila5.jpg';
+import Image6 from './img/akhila6.jpg';
+import Image7 from './img/akhila7.jpg';
 
 const About = () => {
-  const images = [Image1, Image2, Image3, Image4];
+  const images = [Image1, Image2, Image3, Image4,Image5,Image6,Image7];
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
