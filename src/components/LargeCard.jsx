@@ -11,20 +11,22 @@ const LargeCard = (props) => {
       <h1 className="text-[#0e21fe] text-2xl sm:text-3xl px-4">SAI SAHITHRA HOMOEO CLINIC</h1>
       <div className="flex flex-col lg:flex-row justify-between py-5">
         <div className="text-2xl sm:text-3xl font-semibold mb-4 lg:mb-0">
-          <p className="text-black font-normal">Heal. Thrive. Flourish.</p>
+          <p className="font-extrabold text-4xl sm:text-5xl text-gradient bg-clip-text text-transparent from-[#FF5F00] to-[#FFD700]">Heal.</p>
+          <p className="font-bold text-4xl sm:text-5xl text-gradient bg-clip-text text-transparent from-[#0e21fe] to-[#00c6ff]">Thrive.</p>
+          <p className="font-bold text-4xl sm:text-5xl text-gradient bg-clip-text text-transparent from-[#00e676] to-[#0288d1]">Flourish.</p>
 
-          <div className="text-black font-normal mt-4">
+          <div className="text-[#2e2e2e] font-medium mt-4">
             <p>We are not just a clinic; we are your wellness partner.</p>
-            <p>
+            <p className="mt-2">
               Homeopathy: an ancient yet reliable method towards optimal health and wellness. This is the path towards your thriving health.
             </p>
-            <p>
+            <p className="mt-2">
               We strive to help you lead healthy lives and promote your positive health and well-being even beyond the simple absence of disease.
             </p>
-            <p>
+            <p className="mt-2">
               An experienced team strives to provide you with natural vitality that will last for a long time.
             </p>
-            <p>Start your journey towards a better life with homeopathy to discover its power.</p>
+            <p className="mt-2">Start your journey towards a better life with homeopathy to discover its power.</p>
           </div>
 
           <div className="bg-[#0e21fe] w-fit px-5 py-3 shadow-lg shadow-blue-700/60 text-base text-white font-normal rounded-full mt-5">
@@ -38,7 +40,6 @@ const LargeCard = (props) => {
             </p>
           </div>
         </div>
-       
       </div>
 
       <div className="bg-gradient-to-r mt-14 to-blue-300 rounded-t-3xl from-blue-700 via-[#3453ff] flex p-6 justify-between flex-wrap flex-row">
