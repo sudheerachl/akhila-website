@@ -108,7 +108,7 @@ const Hours = () => {
       <div style={styles.consultationsContainer}>
         <div style={styles.consultationsItem}>
           <h2 style={styles.consultationsText}>Online Video Consultations</h2>
-          <h3 style={styles.consultationsText}>10 am to 12 pm</h3>
+          <h3 style={styles.consultationsText}>5pm to 8 pm</h3>
           <h4 style={styles.consultationsText}>Indian Standard Time</h4>
         </div>
         <div style={styles.consultationsItem}>
