@@ -11,9 +11,9 @@ const LargeCard = (props) => {
       <h1 className="text-[#0e21fe] text-2xl sm:text-3xl px-4">SAI SAHITHRA HOMOEO CLINIC</h1>
       <div className="flex flex-col lg:flex-row justify-between py-5">
         <div className="text-2xl sm:text-3xl font-semibold mb-4 lg:mb-0">
-          <p className="font-extrabold text-4xl sm:text-5xl text-gradient bg-clip-text text-transparent from-[#FF5F00] to-[#FFD700]">Heal.</p>
-          <p className="font-bold text-4xl sm:text-5xl text-gradient bg-clip-text text-transparent from-[#0e21fe] to-[#00c6ff]">Thrive.</p>
-          <p className="font-bold text-4xl sm:text-5xl text-gradient bg-clip-text text-transparent from-[#00e676] to-[#0288d1]">Flourish.</p>
+          <p className="font-extrabold text-4xl sm:text-5xl text-black">Heal.</p>
+          <p className="font-bold text-4xl sm:text-5xl text-black">Thrive.</p>
+          <p className="font-bold text-4xl sm:text-5xl text-black">Flourish.</p>
 
           <div className="text-[#2e2e2e] font-medium mt-4">
             <p>We are not just a clinic; we are your wellness partner.</p>
