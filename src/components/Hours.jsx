@@ -19,21 +19,22 @@ const Hours = () => {
       alignItems: "center",
       justifyContent: "center",
       width: "100%",
-      height: "100%",
+      padding: "20px",
       backgroundColor: "white",
     },
     heading: {
-      fontSize: "3rem",
+      fontSize: "2rem",
       fontWeight: "bold",
       color: "black",
+      textAlign: "center",
+      marginBottom: "20px",
     },
     daysContainer: {
-      display: "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
-      justifyContent: "space-around",
-      width: "80%",
-      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
+      gap: "20px",
+      width: "100%",
+      maxWidth: "800px",
     },
     dayItem: {
       display: "flex",
@@ -42,26 +43,30 @@ const Hours = () => {
       justifyContent: "center",
       width: "100px",
       height: "100px",
-      margin: "10px",
+      margin: "0 auto",
       backgroundColor: "#0e21fe",
       borderRadius: "50%",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     },
     dayText: {
       fontSize: "1rem",
       fontWeight: "bold",
       color: "rgb(255, 255, 255)",
+      textAlign: "center",
     },
     statusIcon: {
-      fontSize: "2rem",
+      fontSize: "1.5rem",
       color: "rgb(255, 255, 255)",
+      marginTop: "5px",
     },
     consultationsContainer: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      width: "80%",
-      margin: "0 auto",
+      width: "100%",
+      maxWidth: "800px",
+      marginTop: "30px",
     },
     consultationsItem: {
       display: "flex",
@@ -69,15 +74,19 @@ const Hours = () => {
       alignItems: "center",
       justifyContent: "center",
       width: "100%",
-      height: "100px",
-      margin: "10px",
+      maxWidth: "500px",
+      padding: "20px",
+      marginBottom: "20px",
       backgroundColor: "#0e21fe",
       borderRadius: "10px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     },
     consultationsText: {
       fontSize: "1rem",
       fontWeight: "bold",
       color: "rgb(255, 255, 255)",
+      textAlign: "center",
+      margin: "5px 0",
     },
   };
 
@@ -88,7 +97,7 @@ const Hours = () => {
         {Days.map((day) => (
           <div style={styles.dayItem} key={day}>
             <h2 style={styles.dayText}>{day}</h2>
-            {day === "Saturday" || day === "Sunday" ? (
+            {["Tuesday", "Thursday", "Friday", "Sunday"].includes(day) ? (
               <FcCancel style={styles.statusIcon} />
             ) : (
               <FcOk style={styles.statusIcon} />
