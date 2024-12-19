@@ -23,7 +23,7 @@ const Hours = () => {
       backgroundColor: "white",
     },
     heading: {
-      fontSize: "2rem",
+      fontSize: "3rem",
       fontWeight: "bold",
       color: "black",
       textAlign: "center",
@@ -31,7 +31,7 @@ const Hours = () => {
     },
     daysContainer: {
       display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+      gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
       gap: "20px",
       width: "100%",
       maxWidth: "800px",
