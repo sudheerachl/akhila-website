@@ -57,15 +57,19 @@ h2 {
 p {
   font-size: 16px;
   line-height: 1.6;
+  color: black; /* Added color black */
 }
+
 
 @media (max-width: 768px) {
   h2 {
     font-size: 20px; /* Smaller font size on mobile */
   }
-  p {
-    font-size: 14px; /* Adjusted font size */
-  }
+ p {
+  font-size: 14px;
+  color: black; /* Added color black */
+}
+
 }
 
 /* Myths Section */
