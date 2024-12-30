@@ -6,7 +6,7 @@ import Image1 from './img/akhila1.jpg';
 import Image2 from './img/akhila2.jpg';
 import Image3 from './img/akhila3.jpg';
 import Image4 from './img/akhila4.jpg';
-import Image5 from './img/akhila5.jpg';
+import Image5 from './img/akhila8.png';
 import Image6 from './img/akhila6.jpg';
 import Image7 from './img/akhila7.jpg';
 
