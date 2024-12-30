@@ -95,19 +95,6 @@ const About = () => {
 </div>
 
 
-      {/* Myths Busted Section */}
-      <div className="myths-section">
-        <h2>Myths About Homeopathy – Busted!</h2>
-        <ul>
-          <li><strong>Myth 1:</strong> Homeopathy is just placebo.<br />
-            <em>Fact:</em> Homeopathy has shown positive results in various clinical studies and is used globally by millions.</li>
-          <li><strong>Myth 2:</strong> Homeopathy takes too long to work.<br />
-            <em>Fact:</em> Homeopathy can provide rapid relief, especially in acute conditions when the right remedy is used.</li>
-          <li><strong>Myth 3:</strong> Homeopathy cannot be used alongside conventional medicine.<br />
-            <em>Fact:</em> Homeopathy can complement conventional treatments, improving overall well-being.</li>
-        </ul>
-      </div>
-    </div>
   );
 };
 
