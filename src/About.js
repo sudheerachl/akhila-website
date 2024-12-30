@@ -31,65 +31,66 @@ const About = () => {
 
       {/* About Section */}
 <div className="about-section">
-  <h2>About Dr. Jiddu Sai Akhila</h2>
-  <div className="font-serif text-lg mt-4">
-    <h3 className="font-bold text-[#2e2e2e]">Academic Achievements:</h3>
-    <ul className="list-disc pl-5 mt-2">
-      <li>
-        Dr. Jiddu Sai Akhila, a distinguished practitioner of Homeopathy, graduated with a B.H.M.S. from Father Muller Homeopathic Medical College, Karnataka, excelling academically with top ranks in her first three years and a second rank in her final year, all with distinctions.
-      </li>
-      <li>
-        Awarded the Presidential Gold Medal (2017-2023) and the Gold Scholarship under The Mukesh Batra Academic Excellence Awards for her outstanding performance.
-      </li>
-      <li>
-        Currently pursuing an M.D. in the Practice of Medicine at Government Homoeopathic Medical College, Bengaluru.
-      </li>
-      <li>
-        Recognized as the Rajiv Gandhi University second rank holder for the 2017-2024 BHMS batch and felicitated by the Karnataka Homoeopathic Medical Association (K.H.M.A).
-      </li>
-    </ul>
+  <h2 className="text-2xl font-bold text-center my-4">About Dr. Jiddu Sai Akhila</h2>
+
+  <div className="mt-6">
+    <h3 className="text-xl font-semibold text-[#2e2e2e] mb-2">🎓 Academic Achievements</h3>
+    <div className="border-l-4 border-blue-500 pl-4">
+      <p className="flex items-center mb-3">
+        <span className="text-blue-500 mr-2">➤</span> Graduated with a B.H.M.S. from Father Muller Homeopathic Medical College, Karnataka, securing top ranks and distinctions throughout her course.
+      </p>
+      <p className="flex items-center mb-3">
+        <span className="text-blue-500 mr-2">➤</span> Awarded the prestigious Presidential Gold Medal (2017-2023) and the Mukesh Batra Gold Scholarship for academic excellence.
+      </p>
+      <p className="flex items-center mb-3">
+        <span className="text-blue-500 mr-2">➤</span> Currently pursuing an M.D. in the Practice of Medicine at Government Homoeopathic Medical College, Bengaluru.
+      </p>
+      <p className="flex items-center">
+        <span className="text-blue-500 mr-2">➤</span> Recognized as the Rajiv Gandhi University second rank holder and felicitated by the Karnataka Homoeopathic Medical Association.
+      </p>
+    </div>
   </div>
 
-  <div className="font-sans text-lg mt-4">
-    <h3 className="font-bold text-[#2e2e2e]">Research Contributions:</h3>
-    <ul className="list-square pl-5 mt-2">
-      <li>
-        Conducted a 2020 study titled "An observational study to evaluate the effectiveness of Piscidia erythrina 30 in Primary Insomnia using PSQI scale," funded by Rajiv Gandhi University grants.
-      </li>
-      <li>
-        Completed a 2023 survey study on the prevalent constitutional type among undergraduate students, supported by M.L. Dhawle Research grants.
-      </li>
-      <li>
-        Actively participates in academic conferences, health camps, and collaborations with pioneering practitioners to expand her expertise.
-      </li>
-    </ul>
+  <div className="mt-6">
+    <h3 className="text-xl font-semibold text-[#2e2e2e] mb-2">🔬 Research Contributions</h3>
+    <div className="border-l-4 border-green-500 pl-4">
+      <p className="flex items-center mb-3">
+        <span className="text-green-500 mr-2">➤</span> Conducted a 2020 study titled "Effectiveness of Piscidia erythrina 30 in Primary Insomnia using PSQI scale," under Rajiv Gandhi University grants.
+      </p>
+      <p className="flex items-center mb-3">
+        <span className="text-green-500 mr-2">➤</span> Completed a 2023 survey study on the prevalent constitutional type among students, funded by M.L. Dhawle Research grants.
+      </p>
+      <p className="flex items-center">
+        <span className="text-green-500 mr-2">➤</span> Actively participates in conferences, health camps, and collaborations to stay at the forefront of her field.
+      </p>
+    </div>
   </div>
 
-  <div className="font-mono text-lg mt-4">
-    <h3 className="font-bold text-[#2e2e2e]">Awards and Recognitions:</h3>
-    <ul className="list-circle pl-5 mt-2">
-      <li>
-        Won the Best Paper Presentation Award at RUBYCON-2024 for her study on constitutional types among undergraduate students.
-      </li>
-      <li>
-        Presented research at the National Homeopathic Conference – GLOBE IN GLOBULE in January 2023, organized by B.V.V.S. Homeopathic Medical College and Hospital.
-      </li>
-      <li>
-        Participated in a Poster Presentation at the INTERNATIONAL AYUSH SUMMIT, held in Kanyakumari in 2023.
-      </li>
-    </ul>
+  <div className="mt-6">
+    <h3 className="text-xl font-semibold text-[#2e2e2e] mb-2">🏆 Awards and Recognitions</h3>
+    <div className="border-l-4 border-red-500 pl-4">
+      <p className="flex items-center mb-3">
+        <span className="text-red-500 mr-2">➤</span> Best Paper Presentation Award at RUBYCON-2024 for her study on constitutional types among students.
+      </p>
+      <p className="flex items-center mb-3">
+        <span className="text-red-500 mr-2">➤</span> Presented research at the National Homeopathic Conference – GLOBE IN GLOBULE, January 2023.
+      </p>
+      <p className="flex items-center">
+        <span className="text-red-500 mr-2">➤</span> Participated in a Poster Presentation at the INTERNATIONAL AYUSH SUMMIT, Kanyakumari, 2023.
+      </p>
+    </div>
   </div>
 
-  <div className="font-cursive text-lg mt-4">
-    <h3 className="font-bold text-[#2e2e2e]">Commitment to Excellence:</h3>
-    <ul className="list-disc pl-5 mt-2">
-      <li>
-        Demonstrates unwavering dedication to research, patient care, and academic excellence, making her a highly respected figure in the Homeopathic community.
-      </li>
-      <li>
-        Continues to inspire others with her passion for promoting health and wellness, supported by a strong foundation of knowledge and experience.
-      </li>
-    </ul>
+  <div className="mt-6">
+    <h3 className="text-xl font-semibold text-[#2e2e2e] mb-2">🌟 Commitment to Excellence</h3>
+    <div className="border-l-4 border-yellow-500 pl-4">
+      <p className="flex items-center mb-3">
+        <span className="text-yellow-500 mr-2">➤</span> Dedicated to promoting health and wellness with a strong foundation of knowledge and experience.
+      </p>
+      <p className="flex items-center">
+        <span className="text-yellow-500 mr-2">➤</span> Inspires others with her passion for patient care, research, and academic excellence.
+      </p>
+    </div>
   </div>
 </div>
 
