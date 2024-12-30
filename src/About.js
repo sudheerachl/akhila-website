@@ -30,27 +30,69 @@ const About = () => {
       </div>
 
       {/* About Section */}
-      <div className="about-section">
-        <h2>About Dr. Jiddu Sai Akhila</h2>
-        <h5>
-         Dr. Jiddu Sai Akhila is a distinguished and passionate practitioner of alternative medicine, specializing in Homeopathy. She completed her B.H.M.S. (Bachelor of Homeopathic Medicine and Surgery) from Father Muller Homeopathic Medical College in Karnataka, India, where she excelled academically, securing the first rank in her first three years and the second rank in her final year, all with distinctions. Her exceptional dedication to her studies earned her the Presidential Gold Medal Award (2017-2023) and the prestigious Gold Scholarship under The Mukesh Batra Academic Excellence Awards. Dr. Akhila is currently pursuing her M.D. in the Practice of Medicine at the Government Homoeopathic Medical College, Bengaluru. She is also recognized as the Rajiv Gandhi University second rank holder for the 2017-2024 BHMS batch and has been felicitated by the Karnataka Homoeopathic Medical Association (K.H.M.A) for her academic excellence in B.H.M.S.
-        </h5>
-         <h5>
+<div className="about-section">
+  <h2>About Dr. Jiddu Sai Akhila</h2>
+  <div className="font-serif text-lg mt-4">
+    <h3 className="font-bold text-[#2e2e2e]">Academic Achievements:</h3>
+    <ul className="list-disc pl-5 mt-2">
+      <li>
+        Dr. Jiddu Sai Akhila, a distinguished practitioner of Homeopathy, graduated with a B.H.M.S. from Father Muller Homeopathic Medical College, Karnataka, excelling academically with top ranks in her first three years and a second rank in her final year, all with distinctions.
+      </li>
+      <li>
+        Awarded the Presidential Gold Medal (2017-2023) and the Gold Scholarship under The Mukesh Batra Academic Excellence Awards for her outstanding performance.
+      </li>
+      <li>
+        Currently pursuing an M.D. in the Practice of Medicine at Government Homoeopathic Medical College, Bengaluru.
+      </li>
+      <li>
+        Recognized as the Rajiv Gandhi University second rank holder for the 2017-2024 BHMS batch and felicitated by the Karnataka Homoeopathic Medical Association (K.H.M.A).
+      </li>
+    </ul>
+  </div>
 
-        
-Research has always been at the core of Dr. Akhila’s practice and intellectual curiosity. She has actively contributed to the advancement of Homeopathy through significant research work. In 2020, she conducted and published a study titled "An observational study to evaluate the effectiveness of Piscidia erythrina 30 in Primary Insomnia using PSQI scale," under Rajiv Gandhi University grants. In 2023, she undertook research under the M.L. Dhawle Research grants, focusing on a survey study to determine the prevalent constitutional type among undergraduate students of an educational institution. A dedicated learning enthusiast, Dr. Akhila believes in continually expanding her knowledge base, participating in various academic conferences, meeting pioneering practitioners, and engaging in health camps to stay at the forefront of her field.
-        </h5>
- <h5>
+  <div className="font-sans text-lg mt-4">
+    <h3 className="font-bold text-[#2e2e2e]">Research Contributions:</h3>
+    <ul className="list-square pl-5 mt-2">
+      <li>
+        Conducted a 2020 study titled "An observational study to evaluate the effectiveness of Piscidia erythrina 30 in Primary Insomnia using PSQI scale," funded by Rajiv Gandhi University grants.
+      </li>
+      <li>
+        Completed a 2023 survey study on the prevalent constitutional type among undergraduate students, supported by M.L. Dhawle Research grants.
+      </li>
+      <li>
+        Actively participates in academic conferences, health camps, and collaborations with pioneering practitioners to expand her expertise.
+      </li>
+    </ul>
+  </div>
 
-        
-Dr. Akhila’s excellence has been recognized through numerous awards and honors. She was awarded the Best Paper Presentation Award at the RUBYCON-2024 24th Annual National Homeopathic Conference held at Father Muller Homoeopathic Medical College for her study on constitutional types among undergraduate students. She also participated in the National Homeopathic Conference – GLOBE IN GLOBULE, conducted by B.V.V.S. Homeopathic Medical College and Hospital in January 2023, where she presented her research. Her involvement extends beyond academia, as she also participated in a Poster Presentation at the INTERNATIONAL AYUSH SUMMIT held in Kanyakumari in 2023.
-       </h5>
- <h5>
+  <div className="font-mono text-lg mt-4">
+    <h3 className="font-bold text-[#2e2e2e]">Awards and Recognitions:</h3>
+    <ul className="list-circle pl-5 mt-2">
+      <li>
+        Won the Best Paper Presentation Award at RUBYCON-2024 for her study on constitutional types among undergraduate students.
+      </li>
+      <li>
+        Presented research at the National Homeopathic Conference – GLOBE IN GLOBULE in January 2023, organized by B.V.V.S. Homeopathic Medical College and Hospital.
+      </li>
+      <li>
+        Participated in a Poster Presentation at the INTERNATIONAL AYUSH SUMMIT, held in Kanyakumari in 2023.
+      </li>
+    </ul>
+  </div>
 
-        
-Dr. Akhila’s deep commitment to research, patient care, and academic excellence makes her a highly respected figure in the Homeopathic community. She continues to inspire others with her unwavering dedication to promoting health and wellness, backed by a strong foundation of knowledge and experience.
-        </h5>
-      </div>
+  <div className="font-cursive text-lg mt-4">
+    <h3 className="font-bold text-[#2e2e2e]">Commitment to Excellence:</h3>
+    <ul className="list-disc pl-5 mt-2">
+      <li>
+        Demonstrates unwavering dedication to research, patient care, and academic excellence, making her a highly respected figure in the Homeopathic community.
+      </li>
+      <li>
+        Continues to inspire others with her passion for promoting health and wellness, supported by a strong foundation of knowledge and experience.
+      </li>
+    </ul>
+  </div>
+</div>
+
 
       {/* Myths Busted Section */}
       <div className="myths-section">
