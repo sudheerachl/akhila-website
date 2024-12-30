@@ -16,18 +16,19 @@ const LargeCard = (props) => {
           <p className="font-bold text-4xl sm:text-5xl text-black">Flourish.</p>
 
           <div className="text-[#2e2e2e] font-medium mt-4">
-            <p>We are not just a clinic; we are your wellness partner.</p>
-            <p className="mt-2">
-              Homeopathy: an ancient yet reliable method towards optimal health and wellness. This is the path towards your thriving health.
-            </p>
-            <p className="mt-2">
-              We strive to help you lead healthy lives and promote your positive health and well-being even beyond the simple absence of disease.
-            </p>
-            <p className="mt-2">
-              An experienced team strives to provide you with natural vitality that will last for a long time.
-            </p>
-            <p className="mt-2">Start your journey towards a better life with homeopathy to discover its power.</p>
-          </div>
+  <p>I am not just a doctor; I am your wellness partner.</p>
+  <p className="mt-2">
+    Homeopathy: an ancient yet reliable method towards optimal health and wellness. This is the path towards your thriving health.
+  </p>
+  <p className="mt-2">
+    My goal is to help you lead a healthy life and promote your positive health and well-being, even beyond the simple absence of disease.
+  </p>
+  <p className="mt-2">
+    With my experience, I strive to provide you with natural vitality that will last for a long time.
+  </p>
+  <p className="mt-2">Start your journey towards a better life with homeopathy and discover its power.</p>
+</div>
+
 
           <div className="bg-[#0e21fe] w-fit px-5 py-3 shadow-lg shadow-blue-700/60 text-base text-white font-normal rounded-full mt-5">
             <p className="flex items-center justify-center gap-3">
@@ -65,7 +66,7 @@ const LargeCard = (props) => {
           <FcDataProtection className="h-20 w-20 bg-white rounded-2xl mr-2 brightness-110" />
           <div className="flex flex-col">
             <p className="text-white font-semibold">Trusted and Secure</p>
-            <p className="text-sm text-white/70">Our team makes sure a Highly</p>
+            <p className="text-sm text-white/70">This clinic  makes sure a Highly</p>
             <p className="text-sm text-white/70">Tested and Secured Environment</p>
           </div>
         </div>
