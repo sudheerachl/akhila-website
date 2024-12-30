@@ -9,7 +9,7 @@ import Image4 from './img/akhila4.jpg';
 import Image5 from './img/akhila8.png';
 import Image6 from './img/akhila6.jpg';
 import Image7 from './img/akhila10.png';
-import Image7 from './img/akhila11.png';
+import Image8 from './img/akhila11.png';
 
 const About = () => {
   const images = [Image1, Image2, Image3, Image4,Image5,Image6,Image7];
