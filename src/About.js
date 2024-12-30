@@ -12,7 +12,7 @@ import Image7 from './img/akhila10.png';
 import Image8 from './img/akhila11.png';
 
 const About = () => {
-  const images = [Image1, Image2, Image3, Image4,Image5,Image6,Image7];
+  const images = [Image1, Image2, Image3, Image4,Image5,Image6,Image7,Image8];
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
