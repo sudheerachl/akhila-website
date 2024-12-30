@@ -1,8 +1,7 @@
-import React from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import { FcVoicePresentation, FcInspection, FcApproval, FcDataProtection } from "react-icons/fc";
-import "./largecard.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { FcVoicePresentation, FcInspection, FcDataProtection } from 'react-icons/fc';
 
 const LargeCard = (props) => {
   const loadcontent = props.load;
@@ -33,7 +32,7 @@ const LargeCard = (props) => {
             <p className="flex items-center justify-center gap-3">
               Get in Touch
               <span className="bg-white/20 p-1 rounded-full">
-                <Link onClick={() => loadcontent()} to="/contact">
+                <Link onClick={loadcontent} to="/contact">
                   <AiOutlineArrowRight />
                 </Link>
               </span>
@@ -65,51 +64,40 @@ const LargeCard = (props) => {
           <FcDataProtection className="h-20 w-20 bg-white rounded-2xl mr-2 brightness-110" />
           <div className="flex flex-col">
             <p className="text-white font-semibold">Trusted and Secure</p>
-            <p className="text-sm text-white/70">This clinic makes sure a Highly</p>
-            <p className="text-sm text-white/70">Tested and Secured Environment</p>
+            <p className="text-sm text-white/70">This clinic makes sure a highly</p>
+            <p className="text-sm text-white/70">tested and secured environment</p>
           </div>
         </div>
       </div>
 
-      <div className="myths-section">
+      {/* Myths Busted Section */}
+      <div className="myths-section mt-10">
         <h2 className="text-2xl font-bold text-center my-4">Myths About Homeopathy – Busted!</h2>
         <ul className="list-disc pl-6 space-y-4">
           <li>
-      <strong>Myth 1:</strong> Homeopathy is just placebo.<br />
-      <em>Fact:</em> Homeopathy has shown positive results in various clinical studies and is used globally by millions.
-    </li>
-    <li>
-      <strong>Myth 2:</strong> Homeopathy takes too long to work.<br />
-      <em>Fact:</em> Homeopathy can provide rapid relief, especially in acute conditions when the right remedy is used.
-    </li>
-    <li>
-      <strong>Myth 3:</strong> Homeopathy cannot be used alongside conventional medicine.<br />
-      <em>Fact:</em> Homeopathy can complement conventional treatments, improving overall well-being.
-    </li>
-    <li>
-      <strong>Myth 4:</strong> Homeopathy is only effective for minor ailments.<br />
-      <em>Fact:</em> Homeopathy has been successfully used to treat chronic and complex health conditions in addition to minor ailments.
-    </li>
-    <li>
-      <strong>Myth 5:</strong> Homeopathy is not scientifically backed.<br />
-      <em>Fact:</em> Homeopathy is based on well-documented principles and has been researched extensively with proven efficacy in various studies.
-    </li>
-    <li>
-      <strong>Myth 6:</strong> Homeopathy has no side effects because it’s just water and sugar.<br />
-      <em>Fact:</em> Homeopathy remedies contain potentized substances and can cause reactions when misused, but are generally safe when prescribed correctly.
-    </li>
-    <li>
-      <strong>Myth 7:</strong> Homeopathy is not suitable for children or pregnant women.<br />
-      <em>Fact:</em> Homeopathy is safe for people of all ages, including children and pregnant women, when guided by a qualified practitioner.
-    </li>
-    <li>
-      <strong>Myth 8:</strong> Homeopathy requires lifestyle changes to work.<br />
-      <em>Fact:</em> While a healthy lifestyle supports overall well-being, homeopathy does not mandate drastic changes for effectiveness.
-    </li>
-    <li>
-      <strong>Myth 9:</strong> Homeopathy relies solely on guesswork.<br />
-      <em>Fact:</em> Homeopathy is a systematized science where remedies are chosen based on a patient’s specific symptoms and constitution.
-    </li>
+            <strong>Myth 1:</strong> Homeopathy is just placebo.<br />
+            <em>Fact:</em> Homeopathy has shown positive results in various clinical studies and is used globally by millions.
+          </li>
+          <li>
+            <strong>Myth 2:</strong> Homeopathy works slowly.<br />
+            <em>Fact:</em> Homeopathy can act quickly, especially in acute conditions, when remedies are chosen correctly.
+          </li>
+          <li>
+            <strong>Myth 3:</strong> Homeopathy cannot treat severe illnesses.<br />
+            <em>Fact:</em> Homeopathy has proven effective in treating both chronic and acute conditions.
+          </li>
+          <li>
+            <strong>Myth 4:</strong> Homeopathy is not a science.<br />
+            <em>Fact:</em> Homeopathy is based on scientific principles of stimulating the body’s self-healing mechanisms.
+          </li>
+          <li>
+            <strong>Myth 5:</strong> Homeopathic remedies contain steroids.<br />
+            <em>Fact:</em> Homeopathic medicines are derived from natural substances and do not contain steroids.
+          </li>
+          <li>
+            <strong>Myth 6:</strong> Homeopathy requires strict dietary restrictions.<br />
+            <em>Fact:</em> While certain foods may be avoided during treatment, no strict restrictions apply universally.
+          </li>
         </ul>
       </div>
     </div>
