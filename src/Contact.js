@@ -16,7 +16,7 @@ const Contact = () => {
     },
     contact2: {
       title: '',
-      text: 'Phone number: 9940640969',
+      text: 'Phone number: 9035231905',
     },
     contact3: {
       title: '',
