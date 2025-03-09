@@ -106,13 +106,21 @@ const Hours = () => {
       </div>
       <div style={styles.consultationsContainer}>
         <div style={styles.consultationsItem}>
-          <h2 style={styles.consultationsText}>Online Video Consultations</h2>
+          <h2 style={styles.consultationsText}>Consultations only on prior appointments</h2>
+          <h3 style={styles.consultationsText}>Consultation fee is variable and dependent on specific circumstances</h3>
+        </div>
+        <div style={styles.consultationsItem}>
+          <h2 style={styles.consultationsText}>Online Audio/Video Consultations</h2>
           <h3 style={styles.consultationsText}>5pm to 8 pm</h3>
           <h4 style={styles.consultationsText}>Indian Standard Time</h4>
         </div>
         <div style={styles.consultationsItem}>
-          <h2 style={styles.consultationsText}>WhatsApp Consultations</h2>
+          <h2 style={styles.consultationsText}>For any queries</h2>
           <h3 style={styles.consultationsText}>Reply within 24 hours</h3>
+        </div>
+        <div style={styles.consultationsItem}>
+          <h2 style={styles.consultationsText}>Medicines will be delivered to your door step</h2>
+        
         </div>
       </div>
     </div>
